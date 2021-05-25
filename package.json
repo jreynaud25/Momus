@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "netlify:serve": "netlify-lambda serve functions/src",
-    "netlify:build": "netlify-lambda build functions/src"
+    "netlify:serve": "netlify-lambda serve ./functions/src",
+    "netlify:build": "netlify-lambda build ./functions/src",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,7 @@
     "faunadb": "^4.3.0",
     "netlify-lambda": "^2.0.7",
     "opentok": "^2.11.0"
-  }
+  },
+  "netlify:serve": "netlify-lambda serve functions/src",
+  "netlify:build": "netlify-lambda build functions/src"
 }

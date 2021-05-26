@@ -8,7 +8,7 @@ const OpenTok = require("opentok");
 const OT = new OpenTok(process.env.VONAGE_KEY, process.env.VONAGE_SECRET);
 
 const headers = {
-  'Access-Control-Allow-Origin': '*',
+  // 'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'Content-Type'
 }
 
